@@ -21,6 +21,7 @@ const VideoGames = () =>{
     <>
         <Link to='/' class="link">Home</Link>
         <h1>Video Game Collection</h1>
+        <button onClick={getVideoGames}>Refresh Video Game List</button>
         {displayGames}
     </>
     )

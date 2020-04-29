@@ -4,7 +4,7 @@ const VideoGame = ({game, deleteGame, updateGame}) =>{
     return(
         <div>
             <h4>{game.title}</h4>
-            <button>Delete</button>
+            <button onClick={() => deleteGame(game._id)}>Delete</button>
             <button>Update</button>
         </div>
     )

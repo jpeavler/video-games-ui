@@ -3,8 +3,8 @@ import React, {useState} from 'react';
 const AddVideoGame = ({refreshGames}) =>{
     const [title, setTitle] = useState('');
     const [platform, setPlatform] = useState('');
-    const [num_players_min, setPlayerMin] = useState(1);
-    const [num_players_max, setPlayerMax] = useState(1);
+    const [num_players_min, setPlayerMin] = useState('');
+    const [num_players_max, setPlayerMax] = useState('');
     const [desc, setDesc] = useState('');
 
     const handleSubmit = (event) =>{
@@ -23,29 +23,38 @@ const AddVideoGame = ({refreshGames}) =>{
             },
             body: JSON.stringify(game)
         }).then(refreshGames)
-            //.then(() => setTitle(''))
+            .then(() => setTitle(''))
+            .then(() => setPlatform(''))
+            .then(() => setPlayerMin(''))
+            .then(() => setPlayerMax(''))
+            .then(() => setDesc(''))
     }
     return(
         <form onSubmit={handleSubmit}>
             <input type='text'
+                value={title}
                 placeholder='Game Title' 
                 onChange={({target}) => setTitle(target.value)} 
                 required/>
-            <input type='text' 
+            <input type='text'
+                value={platform}
                 placeholder='Platform' 
                 onChange={({target}) => setPlatform(target.value)}
                 required/>
-            <input type='number' 
+            <input type='number'
+                value={num_players_min}
                 placeholder='Minimun Players' 
                 onChange={({target}) => setPlayerMin(target.value)}
                 min='1' 
                 required/>
-            <input type='number' 
+            <input type='number'
+                value={num_players_max} 
                 placeholder='Max Players' 
                 onChange={({target}) => setPlayerMax(target.value)}
                 min={num_players_min} 
                 required/>
-            <input type='text' 
+            <input type='text'
+                value={desc} 
                 placeholder='Game Description' 
                 onChange={({target}) => setDesc(target.value)} 
                 required/>

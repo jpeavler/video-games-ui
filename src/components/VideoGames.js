@@ -12,12 +12,11 @@ const VideoGames = () =>{
     }
     const displayGames = videoGames.map((game) =>{
         return <VideoGame key={game._id}
-                game={game}
-                />
+                game={game}/>
     });
     useEffect(() =>{
         getVideoGames();
-    })
+    }, [])
     return (
     <>
         <h1>Video Game Collection</h1>

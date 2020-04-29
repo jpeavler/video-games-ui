@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const AddVideoGame = (refreshGames) =>{
+const AddVideoGame = ({refreshGames}) =>{
     const [title, setTitle] = useState('');
     const [platform, setPlatform] = useState('');
     const [num_players_min, setPlayerMin] = useState(1);
@@ -23,6 +23,7 @@ const AddVideoGame = (refreshGames) =>{
             },
             body: JSON.stringify(game)
         }).then(refreshGames)
+            //.then(() => setTitle(''))
     }
     return(
         <form onSubmit={handleSubmit}>

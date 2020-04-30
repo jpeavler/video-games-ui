@@ -36,8 +36,8 @@ const VideoGames = () =>{
             formToRender = <AddVideoGame key="createForm" refreshGames={getVideoGames}/>;
         }else{
             const data = gameToUpdate;
-            console.log(`Data: ${data}`);
-            formToRender = <UpdateVideoGame key={data._id} game={data} refreshGames={getVideoGames}/>;
+            console.log(`Data's ID: ${data._id}`);
+            formToRender = <UpdateVideoGame key={data._id} id={data._id} game={data} refreshGames={getVideoGames}/>;
         }
         return formToRender;
     }
@@ -51,7 +51,7 @@ const VideoGames = () =>{
     return (
     <>
         <h1>Video Game Collection</h1>
-        <Link to='/' class="link">Back to Home</Link>
+        <Link to='/' className="link">Back to Home</Link>
         {renderForm()}
         <button onClick={getVideoGames}>Refresh Video Game List</button>
         {displayGames}

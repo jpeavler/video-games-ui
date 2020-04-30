@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const UpdateVideoGame = ({refreshGames, game}) =>{
+const UpdateVideoGame = ({refreshGames, game, id}) =>{
     const [title, setTitle] = useState(game.title);
     const [platform, setPlatform] = useState(game.platform);
     const [num_players_min, setPlayerMin] = useState(game.num_players_min);
@@ -16,7 +16,7 @@ const UpdateVideoGame = ({refreshGames, game}) =>{
             num_players_max,
             desc
         }
-        fetch(`${process.env.REACT_APP_API_URL}/api/video-games/${game._id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/api/video-games/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type' : 'application/json'

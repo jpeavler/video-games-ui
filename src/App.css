@@ -16,10 +16,16 @@ form{
   height: 100vh;
   border-right-style: solid;
 }
-.link{
-  color: blue;
-  text-decoration: none;
+nav{
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   border-style: solid;
   border-radius: 3px;
-  align-self: right;
+  color: blue;
+}
+.link{
+  text-decoration: none;
+  color: blue;
 }

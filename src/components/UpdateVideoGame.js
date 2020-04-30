@@ -62,7 +62,7 @@ const UpdateVideoGame = ({refreshGames, game, id}) =>{
             <input type='submit'
                 value='Update Game'/>
             <input type="button" 
-            value="Cancel Update" 
+            value="Cancel Edit" 
             onClick={refreshGames}/>
         </form>
     )

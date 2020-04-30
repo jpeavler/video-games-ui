@@ -55,11 +55,10 @@ const VideoGames = () =>{
     return (
     <>
         <NavBar/>
-        <div>
+        <div className ='wrapper'>
             <h1>Video Game Collection</h1>
             {renderForm()}
-            <button onClick={getVideoGames}>Refresh Video Game List</button>
-            {displayGames}
+            <main>{displayGames}</main>
         </div>
     </>
     )

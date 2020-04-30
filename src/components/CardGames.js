@@ -1,10 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Home = () =>{
+const CardGames = () =>{
     return (
         <>
-            <h1>Home</h1>
+            <h1>Card Game Collection</h1>
             <Link to='/' className="link">Home</Link>
             <Link to='/VideoGames' className="link">Video Games</Link>
             <Link to='/BoardGames' className="link">Board Games</Link>
@@ -15,4 +15,4 @@ const Home = () =>{
     )
 }
 
-export default Home;
+export default CardGames;

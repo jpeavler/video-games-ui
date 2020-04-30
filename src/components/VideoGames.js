@@ -55,7 +55,12 @@ const VideoGames = () =>{
     return (
     <>
         <h1>Video Game Collection</h1>
-        <Link to='/' className="link">Back to Home</Link>
+        <Link to='/' className="link">Home</Link>
+        <Link to='/VideoGames' className="link">Video Games</Link>
+        <Link to='/BoardGames' className="link">Board Games</Link>
+        <Link to='/CardGames' className="link">Card Games</Link>
+        <Link to='/OutdoorGames' className="link">Outdoor Games</Link>
+        <Link to='/MindGames' className="link">Mind Games</Link>
         {renderForm()}
         <button onClick={getVideoGames}>Refresh Video Game List</button>
         {displayGames}

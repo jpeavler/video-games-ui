@@ -31,6 +31,7 @@ const AddVideoGame = ({refreshGames}) =>{
     }
     return(
         <form onSubmit={handleSubmit}>
+            <h3>Add Video Game</h3>
             <input type='text'
                 value={title}
                 placeholder='Game Title' 

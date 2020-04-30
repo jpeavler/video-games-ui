@@ -33,11 +33,15 @@ const VideoGames = () =>{
     const renderForm = () =>{
         let formToRender;
         if(isCreate){
-            formToRender = <AddVideoGame key="createForm" refreshGames={getVideoGames}/>;
+            formToRender = <AddVideoGame key="createForm" 
+                refreshGames={getVideoGames}/>;
         }else{
             const data = gameToUpdate;
             console.log(`Data's ID: ${data._id}`);
-            formToRender = <UpdateVideoGame key={data._id} id={data._id} game={data} refreshGames={getVideoGames}/>;
+            formToRender = <UpdateVideoGame key={data._id}
+                id={data._id}
+                game={data} 
+                refreshGames={getVideoGames}/>;
         }
         return formToRender;
     }

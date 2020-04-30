@@ -5,7 +5,7 @@ const Home = () =>{
     return (
         <>
             <h1>Home</h1>
-            <Link to='/VideoGames' class="link">Video Games</Link>
+            <Link to='/VideoGames' className="link">Video Games</Link>
         </>
     )
 }

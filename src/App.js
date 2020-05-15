@@ -5,8 +5,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import VideoGames from './components/VideoGames';
-import BoardGames from './components/BoardGames';
+import VideoGames from './components/VideoGames/VideoGames';
+import BoardGames from './components/BoardGames/BoardGames';
 import CardGames from './components/CardGames';
 import MindGames from './components/MindGames'
 import OutdoorGames from './components/OutdoorGames';

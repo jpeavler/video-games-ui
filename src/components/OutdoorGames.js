@@ -6,7 +6,7 @@ const OutdoorGames = () =>{
         <>
             <NavBar/>        
             <h1>Outdoor Games</h1>
-            <p>View features of this app on the Video Games page. Other pages are placeholders for a future project.</p>
+            <p>Still in development. Check out completed Video Games and Board Games pages.</p>
         </>
     )
 }

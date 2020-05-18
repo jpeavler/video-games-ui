@@ -48,6 +48,7 @@ main > *{
   margin: 10px;
   border-style: solid;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0;
 }
 h4{
   margin-top: 0px;

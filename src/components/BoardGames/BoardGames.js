@@ -7,7 +7,7 @@ import UpdateBoardGame from './UpdateBoardGame';
 const BoardGames = () =>{
     const [boardGames, setBoardGames] = useState([]);
     const [isCreate, setIsCreate] = useState(true);
-    const [gameToUpdate, setUpdateGame] = useState({});
+    const [gameToUpdate, setUpdateGame] = useState();
 
     useEffect(() =>{    //equivalent to componentDidMount
         getBoardGames();

@@ -7,7 +7,7 @@ import UpdateVideoGame from './UpdateVideoGame'
 const VideoGames = () =>{
     const [videoGames, setVideoGames] = useState([]);
     const [isCreate, setIsCreate] = useState(true);
-    const [gameToUpdate, setUpdateGame] = useState({});
+    const [gameToUpdate, setUpdateGame] = useState();
 
     useEffect(() =>{    //equivalent to componentDidMount
         getVideoGames();

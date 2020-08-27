@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import NavBar from '../NavBar';
 import BoardGame from './BoardGame';
 import AddBoardGame from './AddBoardGame';
 import UpdateBoardGame from './UpdateBoardGame';
@@ -51,14 +50,11 @@ const BoardGames = () =>{
                 updateGame={updateGame}/>
     });
     return (
-        <>
-            <NavBar/>
             <div className ='wrapper'>
                 <h1>Board Game Collection</h1>
                 {renderForm()}
                 <main>{displayGames}</main>
             </div>
-        </>
         )
 }
 

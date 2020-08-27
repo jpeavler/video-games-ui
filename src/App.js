@@ -11,10 +11,12 @@ import CardGames from './components/CardGames';
 import MindGames from './components/MindGames'
 import OutdoorGames from './components/OutdoorGames';
 import Home from './components/Home';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <Router>
+      <NavBar/>
       <div>
         <Switch>
           <Route path="/VideoGames">
